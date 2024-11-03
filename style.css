@@ -1,0 +1,158 @@
+html, body {
+    -webkit-locale: "en-US";
+    height: 100%;
+    width: 100%;
+    font-family: 'cash-market-rounded', -apple-system, BlinkMacSystemFont, 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 24px;
+    -webkit-font-smoothing: antialiased;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #00d64b; /* Green background */
+}
+
+.header {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    display: flex;
+    align-items: center;
+}
+
+.dollar-sign {
+    background-color: white;
+    color: green;
+    font-size: 24px;
+    font-weight: bold;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.cash-app {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 10px;
+}
+
+.login-container {
+    width: 100%;
+    max-width: 400px;
+    padding: 20px;
+    background: #fff; /* White background for the content */
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.title {
+    color: #000;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.instruction {
+    margin: 20px 0;
+}
+
+.create-account {
+    color: green;
+    text-decoration: none;
+}
+
+.phone-label {
+    display: block;
+    margin-top: 20px;
+}
+
+.input-container {
+    display: flex;
+    align-items: center;
+    background-color: #f0f0f0; /* Light ash background for input area */
+    border: 1px solid lightgreen; /* Light green border */
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 20px; /* Add space below input box */
+}
+
+.input-container img {
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
+.input-container span {
+    margin-right: 10px;
+}
+
+input[type="text"], input[type="password"] {
+    flex: 1;
+    border: none;
+    background: #f0f0f0;
+    font-size: 16px;
+    padding: 10px;
+}
+
+input[type="text"]:focus, input[type="password"]:focus {
+    outline: none;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px; /* Add space above the continue button */
+}
+
+button {
+    width: calc(100% - 20px);
+    padding: 10px;
+    margin: 10px 5px 0;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#continueBtn {
+    background-color: #00d64b;
+    color: white;
+    cursor: not-allowed; /* Default state */
+}
+
+#continueBtn:not(:disabled) {
+    background-color: #00d64b;
+    cursor: pointer;
+}
+
+button:hover:not(:disabled) {
+    background-color: #00a837;
+}
+
+.terms {
+    margin: 10px 0;
+    font-size: 12px;
+}
+
+.terms a {
+    color: green;
+    text-decoration: none;
+}
+
+.disclaimer {
+    margin-top: 20px;
+    font-size: 12px;
+}
+
+.disclaimer a {
+    color: green;
+    text-decoration: none;
+}
+
+footer {
+    margin-top: 20px;
+}
